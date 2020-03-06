@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+
+}
+.screen {
+    background-color: aqua;
+    min-height: 200vh;
+
+}
+.card {
+    background-color: #C336A0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: auto;
+    top: 153px;
+
+}
+.card__text {
+    font-size: 150px;
+
+}
+.balloons {
+    position: absolute;
+
+}
