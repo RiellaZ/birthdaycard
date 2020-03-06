@@ -4,26 +4,56 @@ body {
 
 }
 .screen {
-    background-color: aqua;
-    min-height: 200vh;
+    background-color: #EDE7C1;
+    min-height: 100vh;
 
 }
 .card {
-    background-color: #C336A0;
+    background-color: #ECBEC4;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 300px;
     width: auto;
-    top: 153px;
+    top: 150px;
+    transition: transform 3s;
+    transition-timing-function: linear;
+}
+.card:hover {
+    
+    transform: rotate(360deg);
 
 }
 .card__text {
+    color: #C0EDD2;
     font-size: 150px;
-
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.heart {
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    animation-name: heart;
+}
+@keyframes heart {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 .balloons {
     position: absolute;
-
+    left: 300px;
+    width: 70%;
+    height: 70%;
+    animation-name: balloons;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes balloons {
+    0%   {left:300px; top:300px;}
+    100% {left:0px; top:0px;}
 }
